@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Login Page</title>
+<link rel="stylesheet" href="styles1.css">
+
+
+</head>
+<div class="bg-img">
+
+<body>
+<form id="login" method="get" action="index.html" class="container">
+  <h2>Login</h2>
+  <label for="username">Username</label>
+  <input type="text" id="username" placeholder="Enter username" required>
+  <label for="password">Password</label>
+  <input type="password" id="password" placeholder="Enter password" minlength="8" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+  <a href="index.html">
+    <button style="color: black;">Login</button>
+  </a> <br><br>
+</div>
+</form>
+</body>
+</html>

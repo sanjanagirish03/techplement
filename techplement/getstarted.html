@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student_details</title>
+    <center>
+        <h1>Register your new account</h1>
+    </center>
+    <br><br><br>
+
+    <style>
+        button {
+            background:white;
+            size: 15%;
+        }
+    
+        fieldset {
+            font-family: verdana;
+            color: white;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: bold;
+            background-color: #AE9AC6;
+            border-collapse: collapse;
+            border: 4px solid #000000;
+            border-style: double;
+        }
+    
+        h1 {
+            border: black;
+            border-width: 10px;
+            border-style: double;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="registrationForm" onsubmit="return showSuccessMessage();">
+
+        <fieldset>
+            <label for="fname">First Name</label>
+            <input type="text" required id="fname" pattern="[a-zA-z]{3,10}"><br><br>
+    
+            <label for="Iname">Last Name</label>
+            <input type="text" required id="Iname" pattern="[a-zA-z]{1,8}" required> <br><br>
+    
+            <label for="email">Email</label>
+            <input type="email" required id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+    
+            <label for="phone">Phone Number</label>
+            <input type="tel" maxlength="10" id="phone" pattern="[6-9]{1}[0-9]{9}" required><br><br>
+    
+            <label>Gender</label><br><br>
+            <input type="radio" id="M" name="Gender">
+            <label for="MALE">Male</label>
+            <input type="radio" id="F" name="Gender">
+            <label for="FEMALE">Female</label>
+            <input type="radio" id="o" name="Gender">
+            <label for="OTHERS">Others</label> <br><br>
+    
+            <label>Highest Qualification</label><br><br>
+            <input type="radio" id="UG" name="Degree">
+            <label for="Under Graduation">Under Graduation</label>
+            <input type="radio" id="PG" name="Degree">
+            <label for="Post Graduation">Post Graduation</label>
+            <input type="radio" id="Diploma" name="Degree">
+            <label for="Diploma">Diploma</label>
+            <input type="radio" id="PHD" name="Degree">
+            <label for="PHD">PHD</label><br><br>
+    
+            <label>Year Of Graduation</label>
+            <label for="date">Date</label>
+            <input type="date" id="date" name="YOG"> <br><br>
+        </fieldset>
+    
+        <br><br><br>
+    
+        <center>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" onclick="showResetMessage()"/>
+            <button onclick="window.location.href='index.html'">Home</button>
+            <button onclick="window.location.href='newlogin.html'">Logout</button>
+        </center>
+    </form>
+    
+    <script>
+        function showSuccessMessage() {
+            alert('Registered Successfully');
+            window.location.href = 'index.html';
+            return true;
+        }
+
+        function showResetMessage() {
+            alert('Form reset successfully');
+        }
+    </script>
+    
+</body>
+
+</html>
+

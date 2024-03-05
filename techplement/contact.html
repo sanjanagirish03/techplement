@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+
+  <h1>Contact Us</h1>
+
+  <style>
+    h1{
+      text-align: center;
+      border:black;
+      border-width: 10px;
+      border-style: double;
+      
+    }
+
+
+    form{
+      font-size: 150%;
+      text-align: center;
+
+
+    }
+
+    button{
+      padding: 10px 20px;
+      background-color: #FFB6C1;
+      border: none;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    body{
+      background-size: 90%;
+      background-repeat: no-repeat;
+    }
+
+    
+
+  </style>
+</head>
+
+<body background="inn.jpg" >
+
+ 
+
+
+<form action="submitform.html"  >
+
+    <label for="fname">FirstName</label>
+    <br>
+    <input type="text" id="fname" required name="fname" placeholder="Name" pattern="[a-zA-Z]{3,9}">
+    <br><br>
+    
+    <label for="lname">LastName</label>
+    <br>
+    <input type="text" id="lname" required name="lname" placeholder="lname" required>
+    <br><br>
+    
+    <label for="email">Email:</label>
+    <br>
+    <input type="email" id="email" name="email" pattern=".+@.+" required placeholder="email" required>
+    <br><br>
+    
+    <label for="">Phone</label>
+    <br>
+    <input type="tel" id="phone" name="phone" maxlength="10" pattern="[1-9]{1}[0-9]{9}" required>
+    <br><br>
+    
+    <label for="message">Message</label>
+    <br>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    <br><br>
+    
+    <button type="submit">Submit</button>
+  
+</form> <br><br>
+
+</body>
+</html>
