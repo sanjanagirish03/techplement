@@ -1,7 +1,6 @@
 # techplement
 
-start the execution from the newlogin page
-once you excute it, it will redirect to login page
-login in buy giving password - set a password and then you will redirect to home page(index.html) page
-in home page there are main other pages.
-services page,courses page,get started page you can access it you will get sub pages by accessing it
+STEP 1:- Go to newlogin.html file execute from there once you login with username and password you will get home page(index.html).
+STEP 2:- In index.html page you get many pages like services,courses,getstarted and contact us.
+Step 3:- under each pages there are sub pages will get to know once you access it.
+There are many animated images based on the website, i have also uploaded the syllabus of courses .
